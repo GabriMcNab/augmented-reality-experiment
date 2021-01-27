@@ -1,6 +1,9 @@
 <template>
   <a-scene embedded arjs>
-    <a-marker preset="hiro">
+    <a-marker
+      type="pattern"
+      url="https://raw.githubusercontent.com/GabriMcNab/augmented-reality-experiment/master/src/assets/marker/tui.patt"
+    >
       <a-entity
         position="0 0 0"
         scale="0.05 0.05 0.05"
