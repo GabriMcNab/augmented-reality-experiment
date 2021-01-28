@@ -4,19 +4,24 @@
       type="pattern"
       url="https://raw.githubusercontent.com/GabriMcNab/augmented-reality-experiment/master/src/assets/marker/tui.patt"
     >
-      <a-entity
-        position="0 0 0"
-        scale="0.05 0.05 0.05"
-        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-      ></a-entity>
+      <a-entity rotation="-90 0 0" position="0 0 -3">
+        <a-entity position="1.2 0 0">
+          <maps-button></maps-button>
+        </a-entity>
+      </a-entity>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
 </template>
 
 <script>
+import MapsButton from "./components/MapsButton/MapsButton.vue";
+
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    MapsButton
+  }
 };
 </script>
 
