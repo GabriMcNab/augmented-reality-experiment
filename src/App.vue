@@ -1,5 +1,5 @@
 <template>
-  <a-scene embedded arjs>
+  <a-scene embedded arjs vr-mode-ui="enabled: false">
     <a-marker
       type="pattern"
       url="https://raw.githubusercontent.com/GabriMcNab/augmented-reality-experiment/master/src/assets/marker/tui.patt"
