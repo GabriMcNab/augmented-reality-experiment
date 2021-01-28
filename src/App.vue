@@ -8,6 +8,14 @@
         <a-entity position="1.2 0 0">
           <maps-button></maps-button>
         </a-entity>
+        <a-entity position="-1.8 0 0">
+          <maps-directions :directionsData="directions.car"></maps-directions>
+        </a-entity>
+        <a-entity position="-1.8 -0.8 0">
+          <maps-directions
+            :directionsData="directions.walking"
+          ></maps-directions>
+        </a-entity>
       </a-entity>
     </a-marker>
     <a-entity camera></a-entity>
@@ -16,12 +24,30 @@
 
 <script>
 import MapsButton from "./components/MapsButton/MapsButton.vue";
+import MapsDirections from "./components/MapsDirections/MapsDirections.vue";
 
 export default {
   name: "App",
   components: {
-    MapsButton
-  }
+    MapsButton,
+    MapsDirections
+  },
+  data: () => ({
+    directions: {
+      car: {
+        type: "car",
+        via: "via Via Aurelia",
+        time: "5 min",
+        distance: "2.5 Km"
+      },
+      walking: {
+        type: "walking",
+        via: "via Via Aurelia",
+        time: "26 min",
+        distance: "2.1 Km"
+      }
+    }
+  })
 };
 </script>
 
