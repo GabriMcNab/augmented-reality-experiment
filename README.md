@@ -1,4 +1,8 @@
 # augmented-reality-experiment
+Here's the link of the live example: https://augmented-reality-experiment.herokuapp.com/
+
+Note: I've included an example of a ticket in this project (example-voucher.png), so you can try the functionality.
+You just need to open the app on your mobile device and point the camera to the example voucher.
 
 ## Project setup
 ```
